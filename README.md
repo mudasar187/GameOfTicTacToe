@@ -23,3 +23,6 @@ Remember to insert your own api key for the weather API request
 Create a account at [https://openweathermap.org/](https://openweathermap.org/) for free</br>
 and then get the api key and inside the project go to the following file:</br>
 **Weather.java** file and insert your api key here: private final String WEATHER_API_KEY = "your api key";
+
+![2 mainmenufragment](https://user-images.githubusercontent.com/29889280/39089741-50b5699c-45ce-11e8-9ab8-097eb8ff3b38.png)
+![9 gameboardfragment](https://user-images.githubusercontent.com/29889280/39089745-590f167e-45ce-11e8-9e2c-65d396c0568d.png)
