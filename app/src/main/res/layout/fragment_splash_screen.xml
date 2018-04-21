@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splashScreenLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/clouds"
+    android:orientation="vertical"
+    tools:context="no.woact.ahmmud16.Fragments.SplashScreenFragment">
+
+    <LinearLayout
+        android:id="@+id/firstLinerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/introTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="140dp"
+            android:fontFamily="@font/gameofthrones"
+            android:minLines="3"
+            android:text="@string/header_Text_Game_Of_Tic_Tac_Toe"
+            android:textAlignment="center"
+            android:textColor="@color/mainColor"
+            android:textSize="45sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secondLinerLayout"
+        android:layout_width="267dp"
+        android:layout_height="143dp"
+        android:layout_gravity="center"
+        android:background="@drawable/crown"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+
+</LinearLayout>

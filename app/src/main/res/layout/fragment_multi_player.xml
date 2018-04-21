@@ -1,0 +1,109 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/playerVsPlayerFragmentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context="no.woact.ahmmud16.Fragments.ChooseGameModusFragment">
+
+    <TextView
+        android:id="@+id/warsTeachPeopleTextView"
+        android:layout_width="365dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/gameofthrones"
+        android:text="@string/wars_teach_people"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/editTextAndStartGameBtn"
+        android:layout_width="286dp"
+        android:layout_height="330dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/layoutroundedcorners"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/warsTeachPeopleTextView"
+        app:layout_constraintVertical_bias="0.23000002">
+
+        <TextView
+            android:id="@+id/enterPlayerOneTextView"
+            android:layout_width="285dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/gameofthrones"
+            android:paddingTop="10dp"
+            android:text="@string/enter_first_player_name"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/enterPlayerOneEditText"
+            android:layout_width="285dp"
+            android:layout_height="70dp"
+            android:backgroundTint="@android:color/black"
+            android:digits="@string/only_letters_and_numbers"
+            android:ems="10"
+            android:fontFamily="@font/gameofthrones"
+            android:hint="@string/max_letters_hint"
+            android:inputType="textPersonName"
+            android:maxLength="6"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textCursorDrawable="@drawable/color_cursor" />
+
+        <TextView
+            android:id="@+id/enterPlayerTwoTextView"
+            android:layout_width="285dp"
+            android:layout_height="50dp"
+            android:digits="@string/only_letters_and_numbers"
+            android:fontFamily="@font/gameofthrones"
+            android:paddingTop="10dp"
+            android:text="@string/enter_second_player_name"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/enterPlayerTwoEditText"
+            android:layout_width="285dp"
+            android:layout_height="70dp"
+            android:backgroundTint="@android:color/black"
+            android:ems="10"
+            android:fontFamily="@font/gameofthrones"
+            android:hint="@string/max_letters_hint"
+            android:inputType="textPersonName"
+            android:maxLength="6"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textCursorDrawable="@drawable/color_cursor" />
+
+        <Button
+            android:id="@+id/startGameBtn"
+            android:layout_width="270dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonroundedcorners"
+            android:fontFamily="@font/gameofthrones"
+            android:text="@string/start_game"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

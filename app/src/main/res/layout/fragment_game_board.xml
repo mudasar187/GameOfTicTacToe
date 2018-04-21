@@ -1,0 +1,294 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gameBoardFragmentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="no.woact.ahmmud16.Fragments.ChooseGameModusFragment">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layOutFilter"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.8"
+        android:background="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/gameBoardFragmentFilter"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/itemsHolder"
+            android:layout_width="395dp"
+            android:layout_height="127dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/holdItems"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/starkImageView"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/stark"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/lannisterImageView"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="28dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/lannister"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/starkPlayerTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/gameofthrones"
+                    android:textAlignment="textStart"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/starkImageView"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/lannisterPlayerTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="28dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/gameofthrones"
+                    android:textAlignment="textEnd"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lannisterImageView"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/vsTextView"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/gameofthrones"
+                    android:text="@string/vs"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/lannisterImageView"
+                    app:layout_constraintStart_toEndOf="@+id/starkImageView"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/timePlayTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/gameofthrones"
+                    android:text="@string/time_played"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintEnd_toStartOf="@+id/lannisterImageView"
+                    app:layout_constraintStart_toEndOf="@+id/starkImageView"
+                    app:layout_constraintTop_toBottomOf="@+id/vsTextView" />
+
+                <Chronometer
+                    android:id="@+id/chronometerTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/gameofthrones"
+                    android:text="30"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/timePlayTextView"
+                    app:layout_constraintStart_toStartOf="@+id/timePlayTextView"
+                    app:layout_constraintTop_toBottomOf="@+id/timePlayTextView" />
+
+            </android.support.constraint.ConstraintLayout>
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/gameBoard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:columnCount="3"
+            android:rowCount="3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemsHolder"
+            app:layout_constraintVertical_bias="0.132">
+
+            <!--Row 1-->
+            <TableRow android:id="@+id/rowOne">
+
+                <ImageButton
+                    android:id="@+id/btnOne"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/circle"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp" />
+
+                <ImageButton
+                    android:id="@+id/btnTwo"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/circle"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp" />
+
+                <ImageButton
+                    android:id="@+id/btnThree"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/circle"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp" />
+
+            </TableRow>
+
+            <!--Row 2-->
+            <TableRow android:id="@+id/rowTwo">
+
+                <ImageButton
+                    android:id="@+id/btnFour"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/circle"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp" />
+
+                <ImageButton
+                    android:id="@+id/btnFive"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/circle"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp" />
+
+                <ImageButton
+                    android:id="@+id/btnSix"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/circle"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp" />
+
+            </TableRow>
+
+            <!--Row 3-->
+            <TableRow android:id="@+id/rowThree">
+
+                <ImageButton
+                    android:id="@+id/btnSeven"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/circle"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp" />
+
+                <ImageButton
+                    android:id="@+id/btnEight"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/circle"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp" />
+
+                <ImageButton
+                    android:id="@+id/btnNine"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/circle"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/endGameBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/gameofthrones"
+            android:text="@string/end_game"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gameBoard" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

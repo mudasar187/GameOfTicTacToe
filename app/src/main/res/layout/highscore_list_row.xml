@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="38dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/row_padding_vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/row_padding_vertical">
+
+
+    <TextView
+        android:id="@+id/rowPlayerTextView"
+        android:layout_width="119dp"
+        android:layout_height="21dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/gameofthrones"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rowWinTextView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.466" />
+
+    <TextView
+        android:id="@+id/rowWinTextView"
+        android:layout_width="30dp"
+        android:layout_height="19dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="35dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/gameofthrones"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rowDrawTextView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.47" />
+
+    <TextView
+        android:id="@+id/rowLossTextView"
+        android:layout_width="30dp"
+        android:layout_height="19dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/gameofthrones"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rowDrawTextView"
+        android:layout_width="30dp"
+        android:layout_height="19dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="35dp"
+        android:layout_marginTop="2dp"
+        android:layout_toStartOf="@+id/rowLossTextView"
+        android:fontFamily="@font/gameofthrones"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rowLossTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

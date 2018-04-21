@@ -1,0 +1,99 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/highscoreFragmentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context="no.woact.ahmmud16.Fragments.ChooseGameModusFragment">
+
+    <TextView
+        android:id="@+id/highScoreHeaderTextView"
+        android:layout_width="310dp"
+        android:layout_height="149dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/gameofthrones"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/highscore_header"
+        android:textAlignment="center"
+        android:textColor="@color/mainColor"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:orientation="horizontal"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/highScoreHeaderTextView">
+
+        <TextView
+            android:id="@+id/playerNameTextView"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/gameofthrones"
+            android:text="@string/player_name"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/winTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/gameofthrones"
+            android:text="@string/win"
+            android:textAlignment="center"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/drawTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/gameofthrones"
+            android:text="@string/draw"
+            android:textAlignment="center"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/rowWinTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/gameofthrones"
+            android:text="@string/loss"
+            android:textAlignment="center"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="340dp"
+        android:layout_height="270dp"
+        android:layout_alignStart="@+id/highScoreHeaderTextView"
+        android:layout_below="@+id/highScoreHeaderTextView"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.0"></android.support.v7.widget.RecyclerView>
+
+</android.support.constraint.ConstraintLayout>

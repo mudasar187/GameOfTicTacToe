@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#fd000000</color>
+    <color name="mainColor">#c0c0c0</color>
+    <color name="transparentGrey">#a3c0c0c0</color>
+    <color name="lightGrey">#09b6b1b1</color>
+    <color name="toastBackGround">#83131111</color>
+</resources>

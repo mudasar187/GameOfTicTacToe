@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainMenuFragmentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context="no.woact.ahmmud16.Activitys.MainActivity">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/headerGameOfTicTacToeTextView"
+            android:layout_width="310dp"
+            android:layout_height="149dp"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/gameofthrones"
+            android:gravity="center_vertical|center_horizontal"
+            android:minLines="3"
+            android:text="@string/header_Text_Game_Of_Tic_Tac_Toe"
+            android:textAlignment="center"
+            android:textColor="@color/mainColor"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/headerGameOfTicTacToeTextView">
+
+            <Button
+                android:id="@+id/newGameBtn"
+                android:layout_width="285dp"
+                android:layout_height="55dp"
+                android:fontFamily="@font/gameofthrones"
+                android:text="@string/newgame"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/highScoreBtn"
+                android:layout_width="285dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gameofthrones"
+                android:text="@string/player"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/weatherContainer"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="0.9">
+
+            <TextView
+                android:id="@+id/cityTextView"
+                android:layout_width="157dp"
+                android:layout_height="41dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/gameofthrones"
+                android:textAlignment="center"
+                android:textColor="@color/mainColor"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/weatherImageView"
+                android:layout_width="94dp"
+                android:layout_height="61dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toTopOf="@+id/weatherTempWindimageContainer"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cityTextView" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/weatherTempWindimageContainer"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/weatherTempTextView"
+                    android:layout_width="46dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/gameofthrones"
+                    android:gravity="center_vertical"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/weatherWindSpeedContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/weatherWindImageView"
+                        android:layout_width="50dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="16dp"
+                        android:src="@drawable/wind"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/weatherWindSpeedTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/gameofthrones"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="8dp"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/weatherWindImageView"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </android.support.constraint.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/weatherDescriptionTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/weatherWindSpeedContainer"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/celiusTextView"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/celiusTextView"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:fontFamily="@font/gameofthrones"
+                    android:text="@string/celiuc_sign"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/weatherTempTextView"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.68" />
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

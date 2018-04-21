@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/playerExistsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:fontFamily="@font/gameofthrones"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/playerExistsLongTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:fontFamily="@font/gameofthrones"
+        android:text="@string/user_exists"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="5dp">
+
+        <Button
+            android:id="@+id/playerExistsYesBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/gameofthrones"
+            android:text="@string/yes"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/playerExistsNoBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/gameofthrones"
+            android:text="@string/no"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+    </FrameLayout>
+</LinearLayout>
