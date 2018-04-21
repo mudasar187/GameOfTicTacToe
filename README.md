@@ -14,8 +14,6 @@
 
 AI (TTTBOT) is implemented so you can never beat AI (TTTBOT)
 
-Download **app-release.apk** and try the game !
-
 Remember to insert your own api key for the weather API request
 
 Create a account at [https://openweathermap.org/](https://openweathermap.org/) for free</br>
